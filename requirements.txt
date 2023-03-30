@@ -1,3 +1,5 @@
 numpy
+streamlit
 pandas 
-s
+scikit_learn
+matplotlib
