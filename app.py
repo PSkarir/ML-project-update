@@ -121,8 +121,8 @@ prediction = model.predict(df)
 
 # Output
 target_array = df_clean['Enrol_Ind'].values
-st.subheader('Prediction')
-st.write(target_array[prediction])
+#st.subheader('Prediction')
+#st.write(target_array[prediction])
 
 prediction_probabilities = model.predict_proba(df)
 #st.subheader('Class labels and their corresponding index number')
