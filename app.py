@@ -54,7 +54,7 @@ import streamlit as st
 from sklearn.model_selection import cross_val_score, KFold
 df_clean.describe()
 y_names = ['Enrolled', 'Not enrolled']
-df_clean['Enrol_Ind'] = df_clean['Enrol_Ind'].replace({'Not Placed': 0, 'Placed': 1})
+df_clean['Enrol_Ind'] = df_clean['Enrol_Ind'].replace({'Not Enrolled': 0, 'Enrolled': 1})
 
 
 import numpy as np
