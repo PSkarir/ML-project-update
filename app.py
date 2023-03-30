@@ -27,7 +27,7 @@ work_experience_type = pd.CategoricalDtype(categories = ['No', 'Yes'])
 df_clean['work_experience'] = df_clean['work_experience'].astype(work_experience_type)
 specialisation_type = pd.CategoricalDtype(categories = ['Mkt&HR', 'Mkt&Fin'])
 df_clean['specialisation'] = df_clean['specialisation'].astype(specialisation_type)
-status_type = pd.CategoricalDtype(categories = ['Placed', 'Not Placed'])
+status_type = pd.CategoricalDtype(categories = ['Enrolled', 'Not Enrolled'])
 df_clean['status'] = df_clean['status'].astype(status_type)
 # Replacing 'M' with'Male' and 'F' with 'Female'
 df_clean['gender'].replace('M','Male' ,inplace = True)
