@@ -72,12 +72,12 @@ st.sidebar.header('User Input Parameters')
 def user_input_features():
   Gender = st.sidebar.slider('Gender', 0.0, 1.0, 0.6)
   Age = st.sidebar.slider('Age', 18.0, 36.4, 40.0)
-  Admit_Ind = st.sidebar.slider('Admit_Ind', 0.0, 1.0, 0.4)
+  Admit_Ind = st.sidebar.slider('Admit_Ind', 10.0, 100.0, 50.0)
   Trending_Term = st.sidebar.slider('Trending_Term', 0.0 , 1.0 , 0.5)
-  Matric_Ind = st.sidebar.slider('Matric_Ind', 0.0 ,1.0 , 0.5)
+  Matric_Ind = st.sidebar.slider('Matric_Ind', 10.0 , 100.0 , 50.0)
   Country = st.sidebar.slider('Country', 1.0, 15.0 , 6.0)
-  Waitlisted_Ind = st.sidebar.slider('Waitlisted_Ind', 0.0, 1.0, 0.5)
-  Cancelled_Ind = st.sidebar.slider('Cancelled_Ind', 0.0, 1.0, 0.5)
+  Waitlisted_Ind = st.sidebar.slider('Waitlisted_Ind', 10.0 , 100.0, 50.0)
+  Cancelled_Ind = st.sidebar.slider('Cancelled_Ind', 10.0, 100.0, 50.0)
   Academic_Group_Code = st.sidebar.slider('Academic_Group_Code', 0.0, 1.0, 0.5)
 
   user_input_data = {'Gender': Gender,
